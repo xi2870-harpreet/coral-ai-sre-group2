@@ -24,6 +24,11 @@ resource "layout" "main" {
       target = resource.service.coral_ui
       title  = "Coral UI"
     }
+
+    tab "aws_credentials" {
+      target = resource.cloud_credentials.aws
+      title  = "Cloud Credentials"
+    }
   }
 
   column {
