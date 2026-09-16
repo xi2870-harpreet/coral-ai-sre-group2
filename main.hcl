@@ -14,4 +14,30 @@ resource "lab" "main" {
   }
 
   layout = resource.layout.main
+
+  content {
+    chapter "investigation" {
+      title = "AI SRE Investigation"
+
+      page "meet_the_stack" {
+        reference = resource.page.meet_the_stack
+      }
+
+      page "one_sql_connection" {
+        reference = resource.page.one_sql_connection
+      }
+
+      page "agent_online" {
+        reference = resource.page.agent_online
+      }
+
+      page "the_incident" {
+        reference = resource.page.the_incident
+      }
+
+      page "read_only_by_design" {
+        reference = resource.page.read_only_by_design
+      }
+    }
+  }
 }
